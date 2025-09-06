@@ -1,0 +1,41 @@
+{
+  "name": "duel-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "initialise-database": "node --loader ts-node/esm src/initialise-database.ts",
+    "start": "tsc && node dist/index.js",
+    "test": "vitest run src",
+    "test:integration": "vitest run integrationTests",
+    "typecheck": "tsc --noEmit",
+    "prettier": "prettier --write .",
+    "lint": "eslint src --fix"
+  },
+  "author": "CruseCtrl",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "date-fns": "^4.1.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@ghyston/eslint-config-ghyston": "^3.0.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "@types/pg": "^8.15.5",
+    "@types/supertest": "^6.0.3",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
