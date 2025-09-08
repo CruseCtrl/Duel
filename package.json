@@ -6,8 +6,8 @@
   "scripts": {
     "initialise-database": "node --loader ts-node/esm src/initialise-database.ts",
     "start": "tsc && node dist/index.js",
-    "test": "vitest run src",
-    "test:integration": "vitest run integrationTests",
+    "test": "vitest run src --exclude=\"src/integrationTests\"",
+    "test:integration": "vitest run src/integrationTests",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --write .",
     "lint": "eslint src --fix"

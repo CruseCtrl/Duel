@@ -1,7 +1,7 @@
 import request from "supertest";
 import { describe, expect, it } from "vitest";
-import { app } from "../src/app.js";
-import type { ErrorResponse } from "../src/testHelpers.js";
+import { app } from "../app.js";
+import type { ErrorResponse } from "./testHelpers.js";
 
 describe("engagement", () => {
   it("responds with engagement totals for a valid platform", async () => {

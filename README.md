@@ -19,9 +19,11 @@ There's no front end, but it uses Swagger to show the available endpoints and to
   - `npm run initialise-database` (this can take around 20 seconds)
 
 ### Running the server
+
 - Run `npm start` to start the server
 - Go to http://localhost:3000/swagger to view & use the available endpoints
 
 ### Running the tests
-- Run `npm test` to run the unit tests
-- Run `npm test:integration` to run the integration tests. Make sure your Docker container is running first.
+
+- Run `npm run test` to run the unit tests
+- Run `npm run test:integration` to run the integration tests. Make sure your Docker container is running first.

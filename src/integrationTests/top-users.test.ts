@@ -1,7 +1,7 @@
 import request from "supertest";
 import { describe, expect, it } from "vitest";
-import { app } from "../src/app.js";
-import type { TopUser } from "../src/routes/top-users.js";
+import { app } from "../app.js";
+import type { TopUser } from "../routes/top-users.js";
 
 describe("top-users", () => {
   it("responds with a list of top users", async () => {
